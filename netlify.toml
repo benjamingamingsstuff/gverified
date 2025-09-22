@@ -1,0 +1,22 @@
+[build]
+functions = "netlify/functions"
+
+[[redirects]]
+from = "/start"
+to = "/.netlify/functions/discord-auth"
+status = 200
+
+[[redirects]]
+from = "/auth/discord/callback"
+to = "/.netlify/functions/discord-auth"
+status = 200
+
+[[redirects]]
+from = "/auth/google/callback"
+to = "/.netlify/functions/google-auth"
+status = 200
+
+[[redirects]]
+from = "/api/check_verification"
+to = "/.netlify/functions/google-auth"
+status = 200
